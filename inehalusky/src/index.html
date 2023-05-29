@@ -5,19 +5,426 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Tailwind CSS Boilerplate</title>
-
+  <title>Inehalusky.sk</title>
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
-<body class="py-16 bg-gray-200">
-  <h1 class="mb-4 text-4xl text-center text-gray-800 font-bold font-sans">
-    Tailwind CSS Boilerplate
-  </h1>
-  <p class="text-sm text-center text-gray-600 font-sans">
-    Get started by editing index.html
-  </p>
+<body class="font-body">
+
+  <!-- HEADER -->
+
+  <header class="header px-48 bg-primary flex flex-col justify-center items-center">
+    <div class="container flex justify-between items-center py-[32] text-sm">
+      <img src="images/logo.svg" alt="inahaluska.sk" class="logo h-[67] w-[104]">
+      <nav class="navbar">
+        <ul class="nav flex px-10 py-2.5 bg-white rounded-full">
+          <li><a href="#">O nas</a></li>
+          <li class="flex items-center"><a href="#">Ponuka</a><img class="ml-2 h-[4] w-[8]" src="icons/arrow.svg"
+              alt="arrow drop class=">
+          </li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Galeria</a></li>
+        </ul>
+      </nav>
+      <div class="nav-buttons flex items-center">
+        <div class="flex font-semibold">
+          <button class="button-left duration-300 hover:-translate-y-1">Prihlasenie</button>
+          <span>/</span>
+          <butto class="button-right duration-300 hover:-translate-y-1">Registracia</butto items-centern>
+        </div>
+        <button class="icon-right ml-[24]"><img src="icons/bowl-icon.svg" alt="bowl icon" class="underline"
+            ss="max-w-[40] max-h-[40]"></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+
+  <main class="main">
+
+    <!-- HERO -->
+
+    <div class="hero px-48 relative bg-primary pb-20 flex flex-col justify-center items-center">
+      <img src="images/hero-background-shape.svg" alt="hero background shape"
+        class="background-img absolute right-0 bottom-[-1] max-w-[910] z-0">
+      <img src="./icons/hero-background-icon-heart.svg" alt="hero background-icon heart"
+        class="background-icon absolute left-[670] top-[28] max-w-[73]">
+      <img src="icons/hero-background-icon-star.svg" alt="hero background-icon star"
+        class="background-icon absolute left-[495] top-[380] max-w-[102]">
+      <img src="icons/hero-background-icon-sun.svg" alt="hero background icon sun"
+        class="background-icon absolute left-[140] top-[430] max-w-[70]">
+      <div class="container  flex items-center justify-between z-50">
+        <div class="hero-content max-w-[50%]">
+          <h1 class="text-[72px]/[72px]">Toto jedlo je <span class="font-h1 text-[92px]/[128px]">ina haluska</span></h1>
+          <button
+            class="hero-btn text-[24px] text-white px-10 py-2.5 bg-black rounded-full hover:bg-white hover:text-black duration-300">Pozriet
+            ponuku</button>
+        </div>
+        <img src="images/hero-image.png" alt="hero image" class="hero-image max-w-[460] z-10">
+      </div>
+    </div>
+
+    <!-- HALUSKY LOVE -->
+
+    <div class="halusky-love-section mx-48 flex flex-col justify-center items-center pt-20 pb-32">
+      <div class="container flex justify-between items-center">
+        <div class="section-content max-w-[35%]">
+          <h2 class="text-[36px]/[54px] mb-9">Milujeme Slovensko - milujeme halušky</h2>
+          <p class="text-[18] font-light max-w-[82%] mb-9">Avšak halušky nie sú iba bryndzové, alebo s kapustou, teda
+            strapačky, ale tak
+            ako špagety, sushi a tacos sa dajú pripraviť na veľa chutných spôsobov, na slano, ale aj na sladko. Sme hrdí
+            na to, že aj my, Slováci máme svoju cestovinu, a snažíme sa jej rozmanitosť šíriť medzi ľudí v podobe
+            chutného, domáceho a čerstvého jedla.Vitaj vo svete zvanom INÁ HALUŠKA.</p>
+          <div class="sign flex items-center justify-between">
+            <div class="line w-[123px] h-[0] border border-solid border-black"></div>
+            <img src="images/sign.png" alt="sign image" class="sign-img max-w-[205] max-h-[82]">
+          </div>
+        </div>
+        <img src="images/halusky-love-section-image.png" alt="halusky love section image"
+          class="section-img w-[607] h-[543] ">
+      </div>
+    </div>
+
+    <!-- FOLDING  -->
+
+    <div class="folding-section flex-col items-center flex justify-center px-48">
+      <div
+        class="container max-w-[1260] bg-white flex justify-between items-center relative -bottom-5 border-[2px] border-solid h-[308px] rounded-xl border-secondary">
+        <img src="images/folding-container-background-image.svg" alt="container background image"
+          class="absolute bottom-[-1] right-[-1]">
+        <div class="section-content max-w-[35%] ml-[40px]">
+          <h2 class="text-[42px]/[56px] mb-[32]">Vyskladaj si vlastné halušky</h2>
+          <button
+            class="text-lg px-9 py-2 bg-secondary text-white rounded-full border-2 border-solid border-secondary hover:bg-transparent hover:text-secondary duration-300">Vyskladať
+            si</button>
+        </div>
+        <img src="images/folding-image.png" alt="folding image" class="z-10 w-[350px] h-[350px] absolute right-[95]">
+      </div>
+    </div>
+    <img class="w-full h-[80]" style="object-fit: cover;" src="./images/background-bottom-image.svg" alt="imgCurve">
+
+
+    <!-- REVIEW  -->
+
+    <div class="review relative bg-primary flex items-center justify-center pt-[72] pb-[128]">
+      <img src="./icons/hero-background-icon-heart.svg" alt="hero background-icon heart"
+        class="background-icon absolute right-[380] top-[100] max-w-[73]">
+      <img src="icons/hero-background-icon-sun.svg" alt="hero background icon sun"
+        class="background-icon absolute left-[290] top-[205] max-w-[70] z-50">
+      <div class="container">
+        <h2 class="max-w-[535] m-auto text-center text-[42px] mb-16">Pridajte sa k spokojným zákazníkom
+        </h2>
+
+        <!-- Slider main container -->
+        <div class="swiper review-slider mx-28">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper mb-8 ">
+            <!-- Slides -->
+            <div class="swiper-slide bg-white px-10 py-8 rounded-xl min-w-[35%] w-full">
+              <div class="info flex justify-between">
+                <div class="content-left">
+                  <h3 class="name text-red text-xl mb-1">Marian V.</h3>
+                  <p class="date text-sm">3.3.2023</p>
+                </div>
+                <div class="content-right flex items-center">
+                  <p class="score mr-2">4/5</p>
+                  <ul class="stars flex">
+                    <li><img src="images/filled-dot.svg" alt="filled dot"></li>
+                    <li><img src="images/filled-dot.svg" alt="filled dot"></li>
+                    <li><img src="images/filled-dot.svg" alt="filled dot"></li>
+                    <li><img src="images/filled-dot.svg" alt="filled dot"></li>
+                    <li><img src="images/empty-dot.svg" alt="empty dot"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="line w-auto h-0 border border-solid border-grey my-4"></div>
+              <p class="slide-text text-base text-grey">Leo integer malesuada nunc vel risus commodo viverra.
+
+                Fusce id velit ut tortor pretium. Et malesuada fames ac turpis egestas integer eget aliquet. Congue nisi
+                vitae suscipit tellus mauris a diam maecenas sed. Tempor orci eu lobortis elementum nibh tellus.</p>
+            </div>
+            <div class="swiper-slide bg-white px-10 py-8 rounded-xl min-w-[35%] w-full">
+              <div class="info flex justify-between">
+                <div class="content-left">
+                  <h3 class="name text-red text-xl mb-1">Ján S.</h3>
+                  <p class="date text-sm">1.3.2023</p>
+                </div>
+                <div class="content-right flex items-center">
+                  <p class="score mr-2">4/5</p>
+                  <ul class="stars flex">
+                    <li><img src="images/filled-dot.svg" alt="filled dot"></li>
+                    <li><img src="images/filled-dot.svg" alt="filled dot"></li>
+                    <li><img src="images/filled-dot.svg" alt="filled dot"></li>
+                    <li><img src="images/filled-dot.svg" alt="filled dot"></li>
+                    <li><img src="images/empty-dot.svg" alt="empty dot"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="line w-auto h-0 border border-solid border-grey my-4"></div>
+              <p class="slide-text text-base text-grey">Leo integer malesuada nunc vel risus commodo viverra.
+
+                Fusce id velit ut tortor pretium. Et malesuada fames ac turpis egestas integer eget aliquet. Congue nisi
+                vitae suscipit tellus mauris a diam maecenas sed. Tempor orci eu lobortis elementum nibh tellus.</p>
+            </div>
+
+            <div class="swiper-slide p-8 bg-white rounded-xl max-w-[25%] min-h-[318] h-full">
+              <div class="flex items-end">
+                <img src="icons/score.svg" alt="score" class="w-[72] h-[37] mr-3">
+                <p class="text-[14px]">12 reviews</p>
+              </div>
+              <div class="line w-auto h-0 border border-solid border-grey my-4 mt-6 mb-5"></div>
+              <div class="flex flex-col">
+                <p class="mb-4">Ohodnoťte nás</p>
+                <div class="flex items-center mb-4">
+                  <img src="icons/reviews-facebook-icon.svg" alt="facebook icon" class="h-[36] w-[36] mr-3">
+                  <p>facebook</p>
+                </div>
+                <div class="flex items-center">
+                  <img src="icons/reviews-google-icon.svg" alt="Google icon" class="h-[36] w-[36] mr-3">
+                  <p>Google</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bg-white px-10 py-8 rounded-xl max-w-[35%] w-full">
+              <div class="info flex justify-between">
+                <div class="content-left">
+                  <h3 class="name text-red text-xl mb-1">Ján S.</h3>
+                  <p class="date text-sm">1.3.2023</p>
+                </div>
+                <div class="content-right flex items-center">
+                  <p class="score mr-2">4/5</p>
+                  <ul class="stars flex">
+                    <li><img src="images/filled-dot.svg" alt="filled dot"></li>
+                    <li><img src="images/filled-dot.svg" alt="filled dot"></li>
+                    <li><img src="images/filled-dot.svg" alt="filled dot"></li>
+                    <li><img src="images/filled-dot.svg" alt="filled dot"></li>
+                    <li><img src="images/empty-dot.svg" alt="empty dot"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="line w-auto h-0 border border-solid border-grey my-4"></div>
+              <p class="slide-text text-base text-grey">Leo integer malesuada nunc vel risus commodo viverra.
+
+                Fusce id velit ut tortor pretium. Et malesuada fames ac turpis egestas integer eget aliquet. Congue nisi
+                vitae suscipit tellus mauris a diam maecenas sed. Tempor orci eu lobortis elementum nibh tellus.</p>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="flex justify-between">
+            <div class="flex w-fit items-center justify-center">
+              <div class="custom-prev"><img src="icons/arrow.svg" alt="arrow"
+                  class="rotate-90 mt-[2px] h-[6px] w-[13px]">
+              </div>
+              <div class="custom-pagination w-fit"></div>
+              <div class="custom-next"><img src="icons/arrow.svg" alt="arrow"
+                  class="-rotate-90 mt-[2px] h-[6px] w-[13px]">
+              </div>
+
+            </div>
+            <div class="slider-buttons">
+              <button class="duration-300 hover:-translate-y-1">Ostatné referencie</button>
+              <button
+                class="ml-10 py-1.5 px-6 bg-black rounded-full text-white text-base hover:bg-white hover:text-black duration-300">Napísať
+                referenciu</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACTUALITY -->
+    <img class="w-full h-[80]" style="object-fit: cover;" src="./images/background-top-image.svg" alt="imgCurve">
+    <div class="actuality px-48 flex justify-center">
+      <div class="container flex flex-col justify-between items-center">
+        <h2 class="text-[42px] mb-14">Aktuality</h2>
+        <div class="sections flex justify-between items-center w-full">
+          <div class="section w-[340] rounded-[16px] border border-borderGrey ">
+            <img src="images/actuality-section-image.png" alt="actuality-section-image"
+              class="section-image w-[340] h-[256]">
+            <div class="section-content  p-8">
+              <h3 class="font-semibold text-xl mb-2">Sú halušky zdravá strava?</h3>
+              <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="section w-[340] rounded-[16px] border border-borderGrey ">
+            <img src="images/actuality-section-image2.png" alt="actuality-section-image"
+              class="section-image w-[340] h-[256]">
+            <div class="section-content p-8">
+              <h3 class="font-semibold text-xl mb-2">Sú halušky zdravá strava?</h3>
+              <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="section w-[340] rounded-[16px] border border-borderGrey ">
+            <img src="images/actuality-section-image3.png" alt="actuality-section-image"
+              class="section-image w-[340] h-[256]">
+            <div class="section-content p-8">
+              <h3 class="font-semibold text-xl mb-2">Sú halušky zdravá strava?</h3>
+              <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOLLOW US -->
+
+    <div class="follow-us bg-primary mt-[128px]">
+      <div class="container mx-48 relative">
+        <div class="text-content relative mx-48 h-[320px] flex justify-center flex-col">
+          <h2 class="text-[32px] mb-5">Sledujte nás <br>
+            a odporúčte nás</h2>
+          <ul class="follow-sci">
+            <li>
+              <a href="#" class="flex items-center"><img src="icons/instagram.svg" alt="Instagram icon"
+                  class="icon mr-6">
+                <p class="duration-300 hover:-translate-y-1 underline">Instagram</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center">
+                <img src="icons/facebook.svg" alt="Facebook icon" class="icon mr-6">
+                <p class="duration-300 hover:-translate-y-1 underline">Facebook</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center">
+                <img src="icons/youtube.svg" alt="YouTube icon" class="icon mr-6">
+                <p class="duration-300 hover:-translate-y-1 underline">YouTube</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img src="images/follow-us-section-image.png" alt="follow us image"
+          class="absolute right-0 bottom-[-16] w-[560px] h-[356px]">
+      </div>
+    </div>
+
+    <!-- FIND US -->
+
+    <div class="find-us-section flex justify-center pt-36 pb-48 px-48"
+      style="background-image:  url('images/find-us-background-image.svg'); background-repeat: no-repeat; background-size: 105%; background-position-x: center; background-position-y: 55%;">
+      <div class="container flex flex-col justify-center text-center">
+        <h2 class="text-[42px] mb-14">Kde nás nájdete</h2>
+        <div class="flex justify-between text-white text-[20px] text-start">
+          <div class="h-[335] max-w-[514] bg-contain w-full bg-no-repeat flex flex-col justify-end pl-10 pb-7"
+            style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.53)), url('images/bratislava.png') ;">
+            <h3 class="font-semibold text-[32px]">Bratislava</h3>
+            <p>VIVO! – Vajnorská 10645/100, 831 04</p>
+          </div>
+          <div class="h-[335] max-w-[514] bg-contain w-full bg-no-repeat flex flex-col justify-end pl-10 pb-7"
+            style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.53)), url('images/trnava.png');">
+            <h3 class="font-semibold text-[32px]">Trnava</h3>
+            <p>Hlavná 7/13 – pasáž Európa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="w-full h-[80]" style="object-fit: cover;" src="./images/background-bottom-image.svg" alt="imgCurve">
+
+    <!-- CONTACT US -->
+
+    <div class="contact-us relative bg-primary px-48 pt-28">
+      <img src="./icons/hero-background-icon-sun.svg" alt="hero background-icon heart"
+        class="background-icon absolute right-[110] top-[50] max-w-[73]">
+      <img src="icons/hero-background-icon-star.svg" alt="hero background-icon star"
+        class="background-icon absolute left-[120] top-[100] max-w-[102]">
+      <img src="icons/background-icon-boy.svg" alt="hero background-icon star"
+        class="background-icon absolute right-[120] bottom-[30] max-w-[100]">
+      <div class="container flex justify-between items-center">
+        <div class="content-left flex flex-col items-center">
+          <img src="images/logo.svg" alt="logo image" class="logo w-[224] h-[144] mb-[55]">
+          <img src="images/contact-us-section-image.png" alt="left content image" class="left-content-image w-[520]">
+        </div>
+        <form action="" class="flex flex-col w-[490]">
+          <h1 class="text-[42px]">Vždy v kontakte</h1>
+          <div class="input-group flex flex-col mb-[16]">
+            <input type="text" placeholder="Meno"
+              class="mt-11 border-b pb-[15px] border-black bg-[transparent] placeholder-black">
+            <input type="text" placeholder="Email / Telefón"
+              class="mt-11 border-b pb-[15px] border-black bg-[transparent] placeholder-black">
+            <input type="text" placeholder="Napíšte svoju otázku"
+              class="mt-11 border-b pb-[15px] border-black bg-[transparent] placeholder-black">
+          </div>
+          <p class="mb-7 text-[14px]">Odoslaním súhlasím zo spracovaním mojich osobných údajov za účelom vybavenia
+            môjho dopytu.
+            Viac v sekcii
+            Ochrana osobných údajov.</p>
+          <button class="submit py-[8] px-28 bg-black rounded-full text-white w-[273]">Ponuka</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer bg-black flex-col justify-between text-white pt-20 pb-14 text-[16px]">
+    <div class="flex mx-48 justify-between pb-12">
+      <div class="links width-[30%]">
+        <img src="images/footer-logo.svg" alt="inahaluska.sk logo" class="footer-img mb-[46]">
+        <ul class="sci flex items-center">
+          <li><a href="#"><img src="icons/footer-instagram.svg" alt="link to instagram"
+                class="h-[40] w-[40] stroke-primary"></a>
+          </li>
+          <li><a href="#"><img src="icons/footer-facebook.svg" alt="link to facebook" class="h-[40] w-[40]"></a></li>
+          <li><a href="#"><img src="icons/footer-youtube.svg" alt="link to youtube" class="h-[40] w-[40]"></a></li>
+        </ul>
+      </div>
+      <div class="footer-nav flex items-start justify-between">
+        <div class="max-w-[25%]">
+          <h3 class="mb-3 text-[18] text-primary">Kontakt:</h3>
+          <ul class="dropmenu">
+            <li><a href="tel:+421 904443914">+421 904443914</a></li>
+            <li><a href="mailto:info@inahalushka.sk">info@inahalushka.sk</a></li>
+            <li><a href="#">Vajnorská 10645/100,
+                831 04 Slovakia</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-[12] text-[18] text-primary">Menu:</h3>
+          <ul class="dropmenu">
+            <li><a href="#">O nás</a></li>
+            <li><a href="#">Novinky</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-[12] text-[18] text-primary">Dôležité odkazy:</h3>
+          <ul class="dropmenu">
+            <li><a href="#">Bistro Senica</a></li>
+            <li><a href="#">Street food truck</a></li>
+            <li><a href="#">Streed food catering</a></li>
+            <li><a href="#">Fest cool piknik</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-[12] text-[18] text-primary">Ponúkame:</h3>
+          <ul class="dropmenu">
+            <li><a href="#">Ochrana osobných údajov</a></li>
+            <li><a href="#">Cookies policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-bar px-48 flex justify-between text-[14px]">
+      <p>Vytvorené digitálnou agentúrou UPVISION.</p>
+      <p>inahalushka © 2023</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+
 </body>
+
+
 
 </html>

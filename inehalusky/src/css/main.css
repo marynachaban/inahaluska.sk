@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header .nav>li:nth-child(n + 2) {
+    margin-left: 40px;
+    transition: 0.25s;
+    font-size: 14px;
+}
+
+.header .nav>li:hover {
+    color: #FDE374;
+    transition: .2s;
+}
+
+ul.stars>li:nth-child(n + 2) {
+    margin-left: 4px;
+}
+
+ul.follow-sci>li:nth-child(n - 2) {
+    margin-bottom: 16px;
+}
+
+.follow-us .follow-sci>li:hover {
+    color: #A77934;
+    transition: .3s;
+}
+
+.footer .sci>li:nth-child(n + 2) {
+    margin-left: 12px;
+}
+
+.container {
+    margin: 0px 0px;
+}
+
+.footer .dropmenu>li:nth-child(n-2) {
+    margin-bottom: 11px;
+}
